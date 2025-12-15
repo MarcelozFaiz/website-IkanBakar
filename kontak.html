@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profil UMKM - Ikan Bakar Pranoto</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #2ecc71;">
+            <div class="container-fluid">
+                <a class="navbar-brand fw-bold" href="index.html">Ikan Bakar Pranoto</a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav ms-auto">
+                        <a class="nav-link fw-bold" href="index.html">Beranda</a>
+                        <a class="nav-link fw-bold" href="tentang.html">Tentang Kami</a>
+                        <a class="nav-link fw-bold" href="produk.html">Produk</a>
+                        <a class="nav-link fw-bold" href="galeri.html">Galeri</a>
+                        <a class="nav-link fw-bold active" aria-current="page" href="kontak.html">Kontak</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Hubungi Kami</h2>
+        <p>Silakan isi formulir berikut untuk menghubungi tim Ikan Bakar Pranoto:</p>
+
+        <div id="alertSuccess" class="alert alert-success alert-dismissible d-none" role="alert">
+            <strong>Berhasil!</strong> Pesan kamu sudah terkirim 🎉
+            <div id="alertContent" class="mt-2"></div>
+            <div id="alertTime" class="mt-1 text-muted small"></div>
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        </div>
+        <form id="formKontak" class="p-3 border rounded bg-light">
+
+            <label>Jenis Kelamin:</label><br>
+            <input type="radio" id="laki" name="gender" value="laki-laki" required>
+            <label for="laki">Laki-laki</label><br>
+
+            <input type="radio" id="perempuan" name="gender" value="perempuan" required>
+            <label for="perempuan">Perempuan</label><br><br>
+
+            <div class="mb-3">
+                <label for="nama" class="form-label fw-bold">Nama:</label>
+                <input type="text" id="nama" name="nama" class="form-control" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="hp" class="form-label fw-bold">Nomor HP:</label>
+                <input type="text" id="hp" name="hp" class="form-control" placeholder="Contoh: 081234567890" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="email" class="form-label fw-bold">Email:</label>
+                <input type="email" id="email" name="email" class="form-control" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="kategori" class="form-label fw-bold">Kategori Pesan:</label>
+                <select id="kategori" name="kategori" class="form-select" required>
+          <option value="umum">Umum</option>
+          <option value="produk">Produk</option>
+          <option value="kerjasama">Kerjasama</option>
+          <option value="lainnya">Lainnya</option>
+        </select>
+            </div>
+
+            <div class="mb-3">
+                <label for="pesan" class="form-label fw-bold">Pesan:</label>
+                <textarea id="pesan" name="pesan" rows="5" class="form-control" required></textarea>
+            </div>
+
+            <div class="mb-3">
+                <input type="checkbox" id="langganan" name="langganan" class="form-check-input">
+                <label for="langganan" class="form-check-label">Saya ingin menerima info terbaru</label>
+            </div>
+
+            <div class="mb-3">
+                <label for="file" class="form-label fw-bold">Lampirkan File:</label>
+                <input type="file" id="file" name="file" class="form-control" accept=".jpg,.jpeg,.png,.pdf,.doc,.docx">
+            </div>
+
+            <button type="submit" class="btn btn-success">Kirim</button>
+            <button type="reset" class="btn btn-secondary">Clear</button>
+
+            <p id="errorMsg" class="text-danger fw-semibold mt-2"></p>
+
+        </form>
+
+        <p id="waktuKirim" class="mt-3 fw-semibold"></p>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Ikan Bakar Pranoto. Semua Hak di lindungi.</p>
+    </footer>
+    <script src="js/kontak.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil UMKM - Ikan Bakar Pranoto</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #2ecc71;">
+            <div class="container-fluid">
+                <a class="navbar-brand fw-bold" href="index.html">🍃 Ikan Bakar Pranoto</a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav ms-auto">
+                        <a class="nav-link fw-bold" href="index.html">Beranda</a>
+                        <a class="nav-link fw-bold" href="tentang.html">Tentang Kami</a>
+                        <a class="nav-link fw-bold" href="produk.html">Produk</a>
+                        <a class="nav-link fw-bold active" aria-current="page" href="galeri.html">Galeri</a>
+                        <a class="nav-link fw-bold" href="kontak.html">Kontak</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container my-2">
+            <h2 class="text-center fw-bold mb-4">Galeri Ikan Bakar Pranoto</h2>
+
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-4 col-sm-6">
+                    <div class="card shadow-sm" style="width: 18rem;">
+                        <img src="images/logo.png" class="card-img-top" alt="Logo Ikan Bakar Pranoto">
+                        <div class=" card-body text-center ">
+                            <h5 class="card-title fw-bold ">Logo Ikan Bakar Pranoto</h5>
+                            <button type="button" class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#modalLogo">
+                                Lihat Detail
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6 ">
+                    <div class="card shadow-sm " style="width: 18rem; ">
+                        <img src="images/bawal.webp" class="card-img-top " alt="Ikan Bawal Bakar">
+                        <div class="card-body text-center ">
+                            <h5 class="card-title fw-bold ">Ikan Bawal Bakar</h5>
+                            <button type="button" class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#modalIkanBawal">
+                                Lihat Detail
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6 ">
+                    <div class="card shadow-sm " style="width: 18rem; ">
+                        <img src="images/gurame.jpg" class="card-img-top " alt="Ikan Gurame Bakar">
+                        <div class="card-body text-center ">
+                            <h5 class="card-title fw-bold ">Ikan Gurame Bakar</h5>
+                            <button type="button" class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#modalIkanGurame">
+                                Lihat Detail
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6 ">
+                    <div class="card shadow-sm " style="width: 18rem; ">
+                        <img src="images/jeruk.jpg" class="card-img-top " alt="Ikan Jeruk Bakar">
+                        <div class="card-body text-center ">
+                            <h5 class="card-title fw-bold ">Ikan Jeruk Bakar</h5>
+                            <button type="button" class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#modalIkanJeruk">
+                                Lihat Detail
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6 ">
+                    <div class="card shadow-sm " style="width: 18rem; ">
+                        <img src="images/kakapmerah.jpg" class="card-img-top " alt="Ikan Kakap Merah">
+                        <div class="card-body text-center ">
+                            <h5 class="card-title fw-bold ">Ikan Kakap Merah Bakar</h5>
+                            <button type="button" class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#modalIkanKakapMerah">
+                                Lihat Detail
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6 ">
+                    <div class="card shadow-sm " style="width: 18rem; ">
+                        <img src="images/kerapu.jpg" class="card-img-top " alt="Ikan Kerapu">
+                        <div class="card-body text-center ">
+                            <h5 class="card-title fw-bold ">Ikan Kerapu Bakar</h5>
+                            <button type="button" class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#modalKerapuBakar">
+                                Lihat Detail
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="modal fade " id="modalLogo" tabindex="-1 ">
+            <div class="modal-dialog modal-dialog-centered modal-lg ">
+                <div class="modal-content ">
+                    <div class="modal-header bg-success text-white ">
+                        <h5 class="modal-title fw-bold">Logo Ikan Bakar Pranoto</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-center ">
+                        <img src="images/logo.png" class="img-fluid rounded mb-3 ">
+                        <p>Ini merupakan Logo Ikan Bakar Pranoto</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modalIkanBawal" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered modal-lg ">
+                <div class="modal-content ">
+                    <div class="modal-header bg-success text-white ">
+                        <h5 class="modal-title fw-bold">Ikan Bawal Bakar</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-center ">
+                        <img src="images/bawal.webp" class="img-fluid rounded mb-3 ">
+                        <p>Ikan Bawal Bakar</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modalIkanGurame" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered modal-lg ">
+                <div class="modal-content ">
+                    <div class="modal-header bg-success text-white ">
+                        <h5 class="modal-title fw-bold">Ikan Gurame Bakar</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-center ">
+                        <img src="images/gurame.jpg" class="img-fluid rounded mb-3 ">
+                        <p>Ikan Gurame Bakar</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modalIkanJeruk" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered modal-lg ">
+                <div class="modal-content ">
+                    <div class="modal-header bg-success text-white ">
+                        <h5 class="modal-title fw-bold">Ikan Jeruk Bakar</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-center ">
+                        <img src="images/jeruk.jpg" class="img-fluid rounded mb-3">
+                        <p>Ikan Jeruk Bakar</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="modal fade" id="modalIkanKakapMerah" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered modal-lg ">
+                <div class="modal-content ">
+                    <div class="modal-header bg-success text-white ">
+                        <h5 class="modal-title fw-bold">Ikan Kakap Merah Bakar</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-center ">
+                        <img src="images/kakapmerah.jpg" class="img-fluid rounded mb-3">
+                        <p>Ikan Kakap Merah Bakar</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modalKerapuBakar" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered modal-lg ">
+                <div class="modal-content ">
+                    <div class="modal-header bg-success text-white ">
+                        <h5 class="modal-title fw-bold">Ikan Kerapu Bakar</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-center ">
+                        <img src="images/kerapu.jpg" class="img-fluid rounded mb-3">
+                        <p>Ikan Kerapu Bakar</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+    <footer>
+        <p>&copy; 2025 Ikan Bakar Pranoto. Semua Hak di lindungi.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

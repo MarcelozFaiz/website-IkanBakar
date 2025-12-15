@@ -1,0 +1,267 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: poppins, sans-serif;
+    background-color: #f9fff9;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #2ecc71;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.buah-img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+nav ul {
+    list-style: none;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 6px 12px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+nav ul li a:hover,
+nav ul li a:active {
+    background: white;
+    color: #2ecc71;
+}
+
+main {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #27ae60;
+    margin-bottom: 10px;
+}
+
+h3 {
+    color: #16a085;
+    margin-top: 15px;
+}
+
+h4 {
+    color: #ffffff;
+    margin-top: 10px;
+    background-color: #50e88f;
+    padding: 2px;
+    border-radius: 4px;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+ul,
+ol {
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 15px 0;
+}
+
+table th,
+table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    width: 10px;
+}
+
+table th {
+    background: #2ecc71;
+    color: white;
+}
+
+form {
+    margin-top: 20px;
+}
+
+input,
+select,
+textarea,
+button {
+    width: 100%;
+    padding: 8px;
+    margin-top: 6px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background: #2ecc71;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #27ae60;
+}
+
+input[type="checkbox"] {
+    width: auto;
+    margin-right: 6px;
+    transform: scale(1.1);
+    accent-color: #2ecc71;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+    margin: auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+    background-color: #42e185;
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 1);
+    margin: 6px auto;
+    max-width: 600px;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ccc;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.galeri {
+    display: grid;
+    flex-wrap: wrap;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 18px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 1000px;
+    background: white;
+}
+
+@media (min-width: 320px) and (max-width: 1024px) {
+    img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .buah-img {
+        max-width: 160px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+    .buah-img:hover {
+        transform: scale(1.05);
+        box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+    }
+    .card img {
+        width: 100%;
+        border-radius: 12px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    }
+}
+
+#errorMsg {
+    color: red;
+    font-weight: bold;
+    background-color: #ffe6e6;
+    border: 1px solid #ff4d4d;
+    padding: 8px;
+    border-radius: 5px;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+#successMsg {
+    color: green;
+    font-weight: bold;
+    background-color: #e6ffe6;
+    border: 1px solid #33cc33;
+    padding: 8px;
+    border-radius: 5px;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.error {
+    color: red;
+    font-size: 0.9em;
+    height: 18px;
+    margin-top: -8px;
+    display: block;
+}
+
+#successWebinar {
+    color: green;
+    font-weight: bold;
+    background-color: #e6ffe6;
+    padding: 8px;
+    border: 1px solid #33cc33;
+    margin-top: 10px;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #2ecc71;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9em;
+}
